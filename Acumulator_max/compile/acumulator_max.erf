@@ -1,0 +1,5 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available." 
+MESSAGE "File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\Controller.vhd" 
+MESSAGE "Compile Entity "Controller"" 
+MESSAGE "Compile Architecture "Controller_Behavioural" of Entity "Controller"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]" 

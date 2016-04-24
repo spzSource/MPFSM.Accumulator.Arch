@@ -1,0 +1,6 @@
+.\src\MicroProcessor.vhd
+.\src\Components\MicroROM.vhd
+.\src\Components\Controller.vhd
+.\src\Components\DataRAM.vhd
+.\src\Components\AccumulatorDataPath.vhd
+.\src\TestBench\microprocessor_TB.vhd

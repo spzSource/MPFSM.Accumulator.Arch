@@ -1,0 +1,12 @@
+[Version]
+Version=9.1
+[Designs]
+acumulator_max=.\Acumulator_max\Acumulator_max.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+acumulator_max=1

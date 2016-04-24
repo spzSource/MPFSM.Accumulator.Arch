@@ -1,0 +1,39 @@
+Active-HDL 9.1.2353.4205  2016-04-25 00:39:46
+
+Elaboration top modules:
+Architecture                  TB_ARCHITECTURE(microprocessor_tb)
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+Entity              | Architecture                    | Library        | Info | Compiler Version         | Compilation Options
+-------------------------------------------------------------------------------------------------------------------------------
+microprocessor_tb   | TB_ARCHITECTURE                 | acumulator_max |      | 9.1.2353.4205  (Windows) | -O3
+MicroProcessor      | microprocessor_behavioural      | acumulator_max |      | 9.1.2353.4205  (Windows) | -O3
+DataRAM             | dataram_bevioural               | acumulator_max |      | 9.1.2353.4205  (Windows) | -O3
+MicroROM            | microrom_behaviour              | acumulator_max |      | 9.1.2353.4205  (Windows) | -O3
+AccumulatorDataPath | accumulatordatapath_behavioural | acumulator_max |      | 9.1.2353.4205  (Windows) | -O3
+Controller          | controller_behavioural          | acumulator_max |      | 9.1.2353.4205  (Windows) | -O3
+-------------------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------------------
+VHDL Package                                          | Library        | Info | Compiler Version         | Compilation Options
+-------------------------------------------------------------------------------------------------------------------------------
+standard                                              | std            |      |                          | <unavailable>
+TEXTIO                                                | std            |      | 9.1.2353.4205  (Windows) |  -2008
+std_logic_1164                                        | ieee           |      | 9.1.2353.4205  (Windows) |  -2008
+NUMERIC_STD                                           | ieee           |      | 9.1.2353.4205  (Windows) |  -2008
+std_logic_arith                                       | ieee           |      | 9.1.2353.4205  (Windows) | 
+STD_LOGIC_UNSIGNED                                    | ieee           |      | 9.1.2353.4205  (Windows) | 
+-------------------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------------------
+Library                                               | Comment
+-------------------------------------------------------------------------------------------------------------------------------
+acumulator_max                                        | None
+ieee                                                  | Standard IEEE packages library
+std                                                   | Standard VHDL library
+-------------------------------------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
+
