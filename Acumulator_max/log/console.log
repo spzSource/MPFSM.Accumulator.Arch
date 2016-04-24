@@ -379,4 +379,689 @@ run 160 ns
 # KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 # KERNEL: Time: 35 ns,  Iteration: 4,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__38.
 # KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 35 ns,  Iteration: 4,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__
+# KERNEL: Time: 35 ns,  Iteration: 4,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__43.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 55 ns,  Iteration: 4,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__38.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 55 ns,  Iteration: 4,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__43.
+# KERNEL: stopped at delta: 3 at time 65 ns.
+# Stopped at breakpoint on signal "/microprocessor_tb/UUT/mp_datapath_enabled" (Event condition) caused by statement in file `f:/Dropbox/Magistracy/POCP/practice/MPFSM_acumulator_max/Acumulator_max/src/Components/AccumulatorDataPath.vhd' at line 43.
+run 160 ns
+# KERNEL: stopped at delta: 3 at time 75 ns.
+# Stopped at breakpoint on signal "/microprocessor_tb/UUT/mp_datapath_enabled" (Event condition) caused by statement in file `f:/Dropbox/Magistracy/POCP/practice/MPFSM_acumulator_max/Acumulator_max/src/Components/AccumulatorDataPath.vhd' at line 43.
+run 160 ns
+# KERNEL: stopped at time: 235 ns
+acom -O3 -work acumulator_max -2002  $dsn/src/MicroProcessor.vhd $dsn/src/Components/MicroROM.vhd $dsn/src/Components/Controller.vhd $dsn/src/Components/DataRAM.vhd $dsn/src/Components/AccumulatorDataPath.vhd $dsn/src/TestBench/microprocessor_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\MicroProcessor.vhd
+# Compile Entity "MicroProcessor"
+# Compile Architecture "MicroProcessor_Behavioural" of Entity "MicroProcessor"
+# Error: COMP96_0367: MicroProcessor.vhd : (98, 19): Improper array length (10). Expected length is 9.
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\MicroROM.vhd
+# Compile Entity "MicroROM"
+# Compile Architecture "MicroROM_Behaviour" of Entity "MicroROM"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\Controller.vhd
+# Compile Entity "Controller"
+# Compile Architecture "Controller_Behavioural" of Entity "Controller"
+# Error: COMP96_0367: Controller.vhd : (63, 54): Improper array length (4). Expected length is 3.
+# Error: COMP96_0367: Controller.vhd : (64, 54): Improper array length (4). Expected length is 3.
+# Error: COMP96_0367: Controller.vhd : (65, 54): Improper array length (4). Expected length is 3.
+# Error: COMP96_0367: Controller.vhd : (66, 54): Improper array length (4). Expected length is 3.
+# Error: COMP96_0367: Controller.vhd : (67, 54): Improper array length (4). Expected length is 3.
+# Error: COMP96_0367: Controller.vhd : (68, 54): Improper array length (4). Expected length is 3.
+# Error: COMP96_0367: Controller.vhd : (69, 54): Improper array length (4). Expected length is 3.
+# Error: COMP96_0367: Controller.vhd : (70, 54): Improper array length (4). Expected length is 3.
+# Error: COMP96_0367: Controller.vhd : (71, 55): Improper array length (4). Expected length is 3.
+# Error: COMP96_0664: Controller.vhd : (85, 83): Value 9 out of range 8 downto 0.
+# Error: COMP96_0079: Controller.vhd : (85, 71): Invalid aggregate.
+# Error: COMP96_0077: Controller.vhd : (85, 71): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0664: Controller.vhd : (86, 81): Value 3 out of range 2 downto 0.
+# Error: COMP96_0079: Controller.vhd : (86, 71): Invalid aggregate.
+# Error: COMP96_0077: Controller.vhd : (86, 71): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0367: Controller.vhd : (196, 19): Improper array length (9). Expected length is 10.
+# Error: COMP96_0367: Controller.vhd : (209, 20): Improper array length (3). Expected length is 4.
+# Error: COMP96_0367: Controller.vhd : (212, 20): Improper array length (3). Expected length is 4.
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\DataRAM.vhd
+# Compile Entity "DataRAM"
+# Compile Architecture "DataRAM_Bevioural" of Entity "DataRAM"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\AccumulatorDataPath.vhd
+# Compile Entity "AccumulatorDataPath"
+# Compile Architecture "AccumulatorDataPath_Behavioural" of Entity "AccumulatorDataPath"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\TestBench\microprocessor_TB.vhd
+# Compile Entity "microprocessor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
+# Compile failure 19 Errors 0 Warnings  Analysis time :  0.3 [s]
+acom -O3 -work acumulator_max -2002  $dsn/src/MicroProcessor.vhd $dsn/src/Components/MicroROM.vhd $dsn/src/Components/Controller.vhd $dsn/src/Components/DataRAM.vhd $dsn/src/Components/AccumulatorDataPath.vhd $dsn/src/TestBench/microprocessor_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\MicroProcessor.vhd
+# Compile Entity "MicroProcessor"
+# Compile Architecture "MicroProcessor_Behavioural" of Entity "MicroProcessor"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\MicroROM.vhd
+# Compile Entity "MicroROM"
+# Compile Architecture "MicroROM_Behaviour" of Entity "MicroROM"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\Controller.vhd
+# Compile Entity "Controller"
+# Compile Architecture "Controller_Behavioural" of Entity "Controller"
+# Error: COMP96_0367: Controller.vhd : (63, 54): Improper array length (4). Expected length is 3.
+# Error: COMP96_0367: Controller.vhd : (64, 54): Improper array length (4). Expected length is 3.
+# Error: COMP96_0367: Controller.vhd : (65, 54): Improper array length (4). Expected length is 3.
+# Error: COMP96_0367: Controller.vhd : (66, 54): Improper array length (4). Expected length is 3.
+# Error: COMP96_0367: Controller.vhd : (67, 54): Improper array length (4). Expected length is 3.
+# Error: COMP96_0367: Controller.vhd : (68, 54): Improper array length (4). Expected length is 3.
+# Error: COMP96_0367: Controller.vhd : (69, 54): Improper array length (4). Expected length is 3.
+# Error: COMP96_0367: Controller.vhd : (70, 54): Improper array length (4). Expected length is 3.
+# Error: COMP96_0367: Controller.vhd : (71, 55): Improper array length (4). Expected length is 3.
+# Error: COMP96_0367: Controller.vhd : (212, 20): Improper array length (3). Expected length is 4.
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\DataRAM.vhd
+# Compile Entity "DataRAM"
+# Compile Architecture "DataRAM_Bevioural" of Entity "DataRAM"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\AccumulatorDataPath.vhd
+# Compile Entity "AccumulatorDataPath"
+# Compile Architecture "AccumulatorDataPath_Behavioural" of Entity "AccumulatorDataPath"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\TestBench\microprocessor_TB.vhd
+# Compile Entity "microprocessor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
+# Compile failure 10 Errors 0 Warnings  Analysis time :  0.4 [s]
+acom -O3 -work acumulator_max -2002  $dsn/src/MicroProcessor.vhd $dsn/src/Components/MicroROM.vhd $dsn/src/Components/Controller.vhd $dsn/src/Components/DataRAM.vhd $dsn/src/Components/AccumulatorDataPath.vhd $dsn/src/TestBench/microprocessor_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\MicroProcessor.vhd
+# Compile Entity "MicroProcessor"
+# Compile Architecture "MicroProcessor_Behavioural" of Entity "MicroProcessor"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\MicroROM.vhd
+# Compile Entity "MicroROM"
+# Compile Architecture "MicroROM_Behaviour" of Entity "MicroROM"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\Controller.vhd
+# Compile Entity "Controller"
+# Compile Architecture "Controller_Behavioural" of Entity "Controller"
+# Error: COMP96_0367: Controller.vhd : (212, 20): Improper array length (3). Expected length is 4.
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\DataRAM.vhd
+# Compile Entity "DataRAM"
+# Compile Architecture "DataRAM_Bevioural" of Entity "DataRAM"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\AccumulatorDataPath.vhd
+# Compile Entity "AccumulatorDataPath"
+# Compile Architecture "AccumulatorDataPath_Behavioural" of Entity "AccumulatorDataPath"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\TestBench\microprocessor_TB.vhd
+# Compile Entity "microprocessor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -work acumulator_max -2002  $dsn/src/MicroProcessor.vhd $dsn/src/Components/MicroROM.vhd $dsn/src/Components/Controller.vhd $dsn/src/Components/DataRAM.vhd $dsn/src/Components/AccumulatorDataPath.vhd $dsn/src/TestBench/microprocessor_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\MicroProcessor.vhd
+# Compile Entity "MicroProcessor"
+# Compile Architecture "MicroProcessor_Behavioural" of Entity "MicroProcessor"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\MicroROM.vhd
+# Compile Entity "MicroROM"
+# Compile Architecture "MicroROM_Behaviour" of Entity "MicroROM"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\Controller.vhd
+# Compile Entity "Controller"
+# Compile Architecture "Controller_Behavioural" of Entity "Controller"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\DataRAM.vhd
+# Compile Entity "DataRAM"
+# Compile Architecture "DataRAM_Bevioural" of Entity "DataRAM"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\AccumulatorDataPath.vhd
+# Compile Entity "AccumulatorDataPath"
+# Compile Architecture "AccumulatorDataPath_Behavioural" of Entity "AccumulatorDataPath"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\TestBench\microprocessor_TB.vhd
+# Compile Entity "microprocessor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+# Breakpoint set on signal "/microprocessor_tb/UUT/mp_datapath_enabled".
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6193 kB (elbread=1023 elab2=5076 kernel=92 sdf=0)
+# KERNEL: ASDB file was created in location f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\wave.asdb
+#  01:41, Monday, April 25, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: microprocessor_tb (TB_ARCHITECTURE)
+# Breakpoint set on signal "/microprocessor_tb/UUT/mp_datapath_enabled".
+# 63 signal(s) traced.
+# wave -rec *
+run 160 ns
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_RAM,  Process: line__55.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_ROM,  Process: line__39.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__38.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__38.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__43.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__43.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: FLAGS_PROCESS.
+# KERNEL: stopped at delta: 1 at time 0 ps.
+# Stopped at breakpoint on signal "/microprocessor_tb/UUT/mp_datapath_enabled" (Event condition) caused by statement in file `f:/Dropbox/Magistracy/POCP/practice/MPFSM_acumulator_max/Acumulator_max/src/Components/AccumulatorDataPath.vhd' at line 43.
+run 160 ns
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 15 ns,  Iteration: 5,  Instance: /microprocessor_tb/UUT/U_RAM,  Process: line__55.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 35 ns,  Iteration: 4,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__38.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 35 ns,  Iteration: 4,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__43.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 55 ns,  Iteration: 5,  Instance: /microprocessor_tb/UUT/U_RAM,  Process: line__55.
+# KERNEL: stopped at delta: 3 at time 85 ns.
+# Stopped at breakpoint on signal "/microprocessor_tb/UUT/mp_datapath_enabled" (Event condition) caused by statement in file `f:/Dropbox/Magistracy/POCP/practice/MPFSM_acumulator_max/Acumulator_max/src/Components/MicroROM.vhd' at line 39.
+run 160 ns
+# KERNEL: stopped at delta: 3 at time 95 ns.
+# Stopped at breakpoint on signal "/microprocessor_tb/UUT/mp_datapath_enabled" (Event condition) caused by statement in file `f:/Dropbox/Magistracy/POCP/practice/MPFSM_acumulator_max/Acumulator_max/src/Components/AccumulatorDataPath.vhd' at line 43.
+run 160 ns
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 95 ns,  Iteration: 5,  Instance: /microprocessor_tb/UUT/U_RAM,  Process: line__55.
+# KERNEL: stopped at time: 255 ns
+acom -O3 -work acumulator_max -2002  $dsn/src/MicroProcessor.vhd $dsn/src/Components/MicroROM.vhd $dsn/src/Components/Controller.vhd $dsn/src/Components/DataRAM.vhd $dsn/src/Components/AccumulatorDataPath.vhd $dsn/src/TestBench/microprocessor_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\MicroProcessor.vhd
+# Compile Entity "MicroProcessor"
+# Compile Architecture "MicroProcessor_Behavioural" of Entity "MicroProcessor"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\MicroROM.vhd
+# Compile Entity "MicroROM"
+# Compile Architecture "MicroROM_Behaviour" of Entity "MicroROM"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\Controller.vhd
+# Compile Entity "Controller"
+# Compile Architecture "Controller_Behavioural" of Entity "Controller"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\DataRAM.vhd
+# Compile Entity "DataRAM"
+# Compile Architecture "DataRAM_Bevioural" of Entity "DataRAM"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\AccumulatorDataPath.vhd
+# Compile Entity "AccumulatorDataPath"
+# Compile Architecture "AccumulatorDataPath_Behavioural" of Entity "AccumulatorDataPath"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\TestBench\microprocessor_TB.vhd
+# Compile Entity "microprocessor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+# Breakpoint set on signal "/microprocessor_tb/UUT/mp_datapath_enabled".
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6193 kB (elbread=1023 elab2=5076 kernel=92 sdf=0)
+# KERNEL: ASDB file was created in location f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\wave.asdb
+#  01:42, Monday, April 25, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: microprocessor_tb (TB_ARCHITECTURE)
+# Breakpoint set on signal "/microprocessor_tb/UUT/mp_datapath_enabled".
+# 63 signal(s) traced.
+# wave -rec *
+run 160 ns
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_RAM,  Process: line__55.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_ROM,  Process: line__39.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__38.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__38.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__43.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__43.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: FLAGS_PROCESS.
+# KERNEL: stopped at delta: 1 at time 0 ps.
+# Stopped at breakpoint on signal "/microprocessor_tb/UUT/mp_datapath_enabled" (Event condition) caused by statement in file `f:/Dropbox/Magistracy/POCP/practice/MPFSM_acumulator_max/Acumulator_max/src/Components/AccumulatorDataPath.vhd' at line 43.
+run 160 ns
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 35 ns,  Iteration: 4,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__38.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 35 ns,  Iteration: 4,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__43.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 55 ns,  Iteration: 4,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__38.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 55 ns,  Iteration: 4,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__43.
+# KERNEL: stopped at delta: 3 at time 65 ns.
+# Stopped at breakpoint on signal "/microprocessor_tb/UUT/mp_datapath_enabled" (Event condition) caused by statement in file `f:/Dropbox/Magistracy/POCP/practice/MPFSM_acumulator_max/Acumulator_max/src/Components/AccumulatorDataPath.vhd' at line 43.
+run 160 ns
+# KERNEL: stopped at delta: 3 at time 75 ns.
+# Stopped at breakpoint on signal "/microprocessor_tb/UUT/mp_datapath_enabled" (Event condition) caused by statement in file `f:/Dropbox/Magistracy/POCP/practice/MPFSM_acumulator_max/Acumulator_max/src/Components/AccumulatorDataPath.vhd' at line 43.
+run 160 ns
+# KERNEL: stopped at time: 235 ns
+acom -O3 -work acumulator_max -2002  $dsn/src/MicroProcessor.vhd $dsn/src/Components/MicroROM.vhd $dsn/src/Components/Controller.vhd $dsn/src/Components/DataRAM.vhd $dsn/src/Components/AccumulatorDataPath.vhd $dsn/src/TestBench/microprocessor_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\MicroProcessor.vhd
+# Compile Entity "MicroProcessor"
+# Compile Architecture "MicroProcessor_Behavioural" of Entity "MicroProcessor"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\MicroROM.vhd
+# Compile Entity "MicroROM"
+# Compile Architecture "MicroROM_Behaviour" of Entity "MicroROM"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\Controller.vhd
+# Compile Entity "Controller"
+# Compile Architecture "Controller_Behavioural" of Entity "Controller"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\DataRAM.vhd
+# Compile Entity "DataRAM"
+# Compile Architecture "DataRAM_Bevioural" of Entity "DataRAM"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\AccumulatorDataPath.vhd
+# Compile Entity "AccumulatorDataPath"
+# Compile Architecture "AccumulatorDataPath_Behavioural" of Entity "AccumulatorDataPath"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\TestBench\microprocessor_TB.vhd
+# Compile Entity "microprocessor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+# Breakpoint set on signal "/microprocessor_tb/UUT/mp_datapath_enabled".
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6193 kB (elbread=1023 elab2=5076 kernel=92 sdf=0)
+# KERNEL: ASDB file was created in location f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\wave.asdb
+#  01:44, Monday, April 25, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: microprocessor_tb (TB_ARCHITECTURE)
+# Breakpoint set on signal "/microprocessor_tb/UUT/mp_datapath_enabled".
+# 63 signal(s) traced.
+# wave -rec *
+run 160 ns
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_RAM,  Process: line__55.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_ROM,  Process: line__39.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__38.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__38.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__43.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__43.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: FLAGS_PROCESS.
+# KERNEL: stopped at delta: 1 at time 0 ps.
+# Stopped at breakpoint on signal "/microprocessor_tb/UUT/mp_datapath_enabled" (Event condition) caused by statement in file `f:/Dropbox/Magistracy/POCP/practice/MPFSM_acumulator_max/Acumulator_max/src/Components/AccumulatorDataPath.vhd' at line 43.
+run 160 ns
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 35 ns,  Iteration: 4,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__38.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 35 ns,  Iteration: 4,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__43.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 55 ns,  Iteration: 4,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__38.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 55 ns,  Iteration: 4,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__43.
+# KERNEL: stopped at delta: 3 at time 65 ns.
+# Stopped at breakpoint on signal "/microprocessor_tb/UUT/mp_datapath_enabled" (Event condition) caused by statement in file `f:/Dropbox/Magistracy/POCP/practice/MPFSM_acumulator_max/Acumulator_max/src/Components/AccumulatorDataPath.vhd' at line 43.
+run 160 ns
+# KERNEL: stopped at delta: 3 at time 75 ns.
+# Stopped at breakpoint on signal "/microprocessor_tb/UUT/mp_datapath_enabled" (Event condition) caused by statement in file `f:/Dropbox/Magistracy/POCP/practice/MPFSM_acumulator_max/Acumulator_max/src/Components/AccumulatorDataPath.vhd' at line 43.
+run 160 ns
+# KERNEL: stopped at time: 235 ns
+acom -O3 -work acumulator_max -2002  $dsn/src/MicroProcessor.vhd $dsn/src/Components/MicroROM.vhd $dsn/src/Components/Controller.vhd $dsn/src/Components/DataRAM.vhd $dsn/src/Components/AccumulatorDataPath.vhd $dsn/src/TestBench/microprocessor_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\MicroProcessor.vhd
+# Compile Entity "MicroProcessor"
+# Compile Architecture "MicroProcessor_Behavioural" of Entity "MicroProcessor"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\MicroROM.vhd
+# Compile Entity "MicroROM"
+# Compile Architecture "MicroROM_Behaviour" of Entity "MicroROM"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\Controller.vhd
+# Compile Entity "Controller"
+# Compile Architecture "Controller_Behavioural" of Entity "Controller"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\DataRAM.vhd
+# Compile Entity "DataRAM"
+# Compile Architecture "DataRAM_Bevioural" of Entity "DataRAM"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\AccumulatorDataPath.vhd
+# Compile Entity "AccumulatorDataPath"
+# Compile Architecture "AccumulatorDataPath_Behavioural" of Entity "AccumulatorDataPath"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\TestBench\microprocessor_TB.vhd
+# Compile Entity "microprocessor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+# Breakpoint set on signal "/microprocessor_tb/UUT/mp_datapath_enabled".
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6193 kB (elbread=1023 elab2=5076 kernel=92 sdf=0)
+# KERNEL: ASDB file was created in location f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\wave.asdb
+#  01:48, Monday, April 25, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: microprocessor_tb (TB_ARCHITECTURE)
+# Breakpoint set on signal "/microprocessor_tb/UUT/mp_datapath_enabled".
+# 63 signal(s) traced.
+# wave -rec *
+run 160 ns
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_RAM,  Process: line__59.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_ROM,  Process: line__39.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__38.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__38.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__43.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__43.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: FLAGS_PROCESS.
+# KERNEL: stopped at delta: 1 at time 0 ps.
+# Stopped at breakpoint on signal "/microprocessor_tb/UUT/mp_datapath_enabled" (Event condition) caused by statement in file `f:/Dropbox/Magistracy/POCP/practice/MPFSM_acumulator_max/Acumulator_max/src/Components/AccumulatorDataPath.vhd' at line 43.
+run 160 ns
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 35 ns,  Iteration: 4,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__38.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 35 ns,  Iteration: 4,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__43.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 55 ns,  Iteration: 4,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__38.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 55 ns,  Iteration: 4,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__43.
+# KERNEL: stopped at delta: 3 at time 65 ns.
+# Stopped at breakpoint on signal "/microprocessor_tb/UUT/mp_datapath_enabled" (Event condition) caused by statement in file `f:/Dropbox/Magistracy/POCP/practice/MPFSM_acumulator_max/Acumulator_max/src/Components/AccumulatorDataPath.vhd' at line 43.
+run 160 ns
+# KERNEL: stopped at delta: 3 at time 75 ns.
+# Stopped at breakpoint on signal "/microprocessor_tb/UUT/mp_datapath_enabled" (Event condition) caused by statement in file `f:/Dropbox/Magistracy/POCP/practice/MPFSM_acumulator_max/Acumulator_max/src/Components/AccumulatorDataPath.vhd' at line 43.
+run 160 ns
+# KERNEL: stopped at time: 235 ns
+run 160 ns
+# KERNEL: stopped at time: 395 ns
+acom -O3 -work acumulator_max -2002  $dsn/src/MicroProcessor.vhd $dsn/src/Components/MicroROM.vhd $dsn/src/Components/Controller.vhd $dsn/src/Components/DataRAM.vhd $dsn/src/Components/AccumulatorDataPath.vhd $dsn/src/TestBench/microprocessor_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\MicroProcessor.vhd
+# Compile Entity "MicroProcessor"
+# Compile Architecture "MicroProcessor_Behavioural" of Entity "MicroProcessor"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\MicroROM.vhd
+# Compile Entity "MicroROM"
+# Compile Architecture "MicroROM_Behaviour" of Entity "MicroROM"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\Controller.vhd
+# Compile Entity "Controller"
+# Compile Architecture "Controller_Behavioural" of Entity "Controller"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\DataRAM.vhd
+# Compile Entity "DataRAM"
+# Compile Architecture "DataRAM_Bevioural" of Entity "DataRAM"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\AccumulatorDataPath.vhd
+# Compile Entity "AccumulatorDataPath"
+# Compile Architecture "AccumulatorDataPath_Behavioural" of Entity "AccumulatorDataPath"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\TestBench\microprocessor_TB.vhd
+# Compile Entity "microprocessor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+# Breakpoint set on signal "/microprocessor_tb/UUT/mp_datapath_enabled".
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6193 kB (elbread=1023 elab2=5076 kernel=92 sdf=0)
+# KERNEL: ASDB file was created in location f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\wave.asdb
+#  01:50, Monday, April 25, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: microprocessor_tb (TB_ARCHITECTURE)
+# Breakpoint set on signal "/microprocessor_tb/UUT/mp_datapath_enabled".
+# 63 signal(s) traced.
+# wave -rec *
+run 160 ns
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_RAM,  Process: line__59.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_ROM,  Process: line__39.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__38.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__38.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__43.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__43.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: FLAGS_PROCESS.
+# KERNEL: stopped at delta: 1 at time 0 ps.
+# Stopped at breakpoint on signal "/microprocessor_tb/UUT/mp_datapath_enabled" (Event condition) caused by statement in file `f:/Dropbox/Magistracy/POCP/practice/MPFSM_acumulator_max/Acumulator_max/src/Components/AccumulatorDataPath.vhd' at line 43.
+run 160 ns
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 35 ns,  Iteration: 4,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__38.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 35 ns,  Iteration: 4,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__43.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 55 ns,  Iteration: 4,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__38.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 55 ns,  Iteration: 4,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__43.
+# KERNEL: stopped at delta: 3 at time 65 ns.
+# Stopped at breakpoint on signal "/microprocessor_tb/UUT/mp_datapath_enabled" (Event condition) caused by statement in file `f:/Dropbox/Magistracy/POCP/practice/MPFSM_acumulator_max/Acumulator_max/src/Components/AccumulatorDataPath.vhd' at line 43.
+run 160 ns
+# KERNEL: stopped at delta: 3 at time 75 ns.
+# Stopped at breakpoint on signal "/microprocessor_tb/UUT/mp_datapath_enabled" (Event condition) caused by statement in file `f:/Dropbox/Magistracy/POCP/practice/MPFSM_acumulator_max/Acumulator_max/src/Components/AccumulatorDataPath.vhd' at line 43.
+run 160 ns
+# KERNEL: stopped at time: 235 ns
+run 160 ns
+# KERNEL: stopped at time: 395 ns
+acom -O3 -work acumulator_max -2002  $dsn/src/MicroProcessor.vhd $dsn/src/Components/MicroROM.vhd $dsn/src/Components/Controller.vhd $dsn/src/Components/DataRAM.vhd $dsn/src/Components/AccumulatorDataPath.vhd $dsn/src/TestBench/microprocessor_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\MicroProcessor.vhd
+# Compile Entity "MicroProcessor"
+# Compile Architecture "MicroProcessor_Behavioural" of Entity "MicroProcessor"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\MicroROM.vhd
+# Compile Entity "MicroROM"
+# Compile Architecture "MicroROM_Behaviour" of Entity "MicroROM"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\Controller.vhd
+# Compile Entity "Controller"
+# Compile Architecture "Controller_Behavioural" of Entity "Controller"
+# Error: COMP96_0071: Controller.vhd : (131, 24): Operator "=" is not defined for such operands.
+# Error: COMP96_0077: Controller.vhd : (131, 11): Undefined type of expression. Expected type 'BOOLEAN'.
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\DataRAM.vhd
+# Compile Entity "DataRAM"
+# Compile Architecture "DataRAM_Bevioural" of Entity "DataRAM"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\AccumulatorDataPath.vhd
+# Compile Entity "AccumulatorDataPath"
+# Compile Architecture "AccumulatorDataPath_Behavioural" of Entity "AccumulatorDataPath"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\TestBench\microprocessor_TB.vhd
+# Compile Entity "microprocessor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -work acumulator_max -2002  $dsn/src/MicroProcessor.vhd $dsn/src/Components/MicroROM.vhd $dsn/src/Components/Controller.vhd $dsn/src/Components/DataRAM.vhd $dsn/src/Components/AccumulatorDataPath.vhd $dsn/src/TestBench/microprocessor_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\MicroProcessor.vhd
+# Compile Entity "MicroProcessor"
+# Compile Architecture "MicroProcessor_Behavioural" of Entity "MicroProcessor"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\MicroROM.vhd
+# Compile Entity "MicroROM"
+# Compile Architecture "MicroROM_Behaviour" of Entity "MicroROM"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\Controller.vhd
+# Compile Entity "Controller"
+# Compile Architecture "Controller_Behavioural" of Entity "Controller"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\DataRAM.vhd
+# Compile Entity "DataRAM"
+# Compile Architecture "DataRAM_Bevioural" of Entity "DataRAM"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\AccumulatorDataPath.vhd
+# Compile Entity "AccumulatorDataPath"
+# Compile Architecture "AccumulatorDataPath_Behavioural" of Entity "AccumulatorDataPath"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\TestBench\microprocessor_TB.vhd
+# Compile Entity "microprocessor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+# Breakpoint set on signal "/microprocessor_tb/UUT/mp_datapath_enabled".
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6193 kB (elbread=1023 elab2=5076 kernel=92 sdf=0)
+# KERNEL: ASDB file was created in location f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\wave.asdb
+#  01:54, Monday, April 25, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: microprocessor_tb (TB_ARCHITECTURE)
+# Breakpoint set on signal "/microprocessor_tb/UUT/mp_datapath_enabled".
+# 63 signal(s) traced.
+# wave -rec *
+run 160 ns
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_RAM,  Process: line__59.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_ROM,  Process: line__39.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__38.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__38.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__43.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__43.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: FLAGS_PROCESS.
+# KERNEL: stopped at delta: 1 at time 0 ps.
+# Stopped at breakpoint on signal "/microprocessor_tb/UUT/mp_datapath_enabled" (Event condition) caused by statement in file `f:/Dropbox/Magistracy/POCP/practice/MPFSM_acumulator_max/Acumulator_max/src/Components/AccumulatorDataPath.vhd' at line 43.
+run 160 ns
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 35 ns,  Iteration: 4,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__38.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 35 ns,  Iteration: 4,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__43.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 55 ns,  Iteration: 4,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__38.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 55 ns,  Iteration: 4,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__43.
+# KERNEL: stopped at delta: 3 at time 65 ns.
+# Stopped at breakpoint on signal "/microprocessor_tb/UUT/mp_datapath_enabled" (Event condition) caused by statement in file `f:/Dropbox/Magistracy/POCP/practice/MPFSM_acumulator_max/Acumulator_max/src/Components/AccumulatorDataPath.vhd' at line 43.
+run 160 ns
+# KERNEL: stopped at delta: 3 at time 75 ns.
+# Stopped at breakpoint on signal "/microprocessor_tb/UUT/mp_datapath_enabled" (Event condition) caused by statement in file `f:/Dropbox/Magistracy/POCP/practice/MPFSM_acumulator_max/Acumulator_max/src/Components/AccumulatorDataPath.vhd' at line 43.
+run 160 ns
+# KERNEL: stopped at time: 235 ns
+acom -O3 -work acumulator_max -2002  $dsn/src/MicroProcessor.vhd $dsn/src/Components/MicroROM.vhd $dsn/src/Components/Controller.vhd $dsn/src/Components/DataRAM.vhd $dsn/src/Components/AccumulatorDataPath.vhd $dsn/src/TestBench/microprocessor_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\MicroProcessor.vhd
+# Compile Entity "MicroProcessor"
+# Compile Architecture "MicroProcessor_Behavioural" of Entity "MicroProcessor"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\MicroROM.vhd
+# Compile Entity "MicroROM"
+# Compile Architecture "MicroROM_Behaviour" of Entity "MicroROM"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\Controller.vhd
+# Compile Entity "Controller"
+# Compile Architecture "Controller_Behavioural" of Entity "Controller"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\DataRAM.vhd
+# Compile Entity "DataRAM"
+# Compile Architecture "DataRAM_Bevioural" of Entity "DataRAM"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\AccumulatorDataPath.vhd
+# Compile Entity "AccumulatorDataPath"
+# Compile Architecture "AccumulatorDataPath_Behavioural" of Entity "AccumulatorDataPath"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\TestBench\microprocessor_TB.vhd
+# Compile Entity "microprocessor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+# Breakpoint set on signal "/microprocessor_tb/UUT/mp_datapath_enabled".
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6193 kB (elbread=1023 elab2=5076 kernel=92 sdf=0)

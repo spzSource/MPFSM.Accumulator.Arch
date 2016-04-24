@@ -8,7 +8,7 @@ use ieee.std_logic_unsigned.all;
 entity AccumulatorDataPath is
 	port(
 		enabled              : in  std_logic;
-		operation_code       : in  std_logic_vector(2 downto 0);
+		operation_code       : in  std_logic_vector(3 downto 0);
 		operand              : in  std_logic_vector(7 downto 0);
 		result               : out std_logic_vector(7 downto 0);
 		zero_flag            : out std_logic;
@@ -26,10 +26,10 @@ architecture AccumulatorDataPath_Behavioural of AccumulatorDataPath is
 	--
 	-- operation codes
 	--
-	constant LOAD : std_logic_vector(2 downto 0) := "000"; 
-	constant LOADI : std_logic_vector(2 downto 0) := "111";
-	constant ADD  : std_logic_vector(2 downto 0) := "010";
-	constant MUL  : std_logic_vector(2 downto 0) := "011";
+	constant LOAD  : std_logic_vector(3 downto 0) := "0000"; 
+	constant LOADI : std_logic_vector(3 downto 0) := "0111";
+	constant ADD   : std_logic_vector(3 downto 0) := "0010";
+	constant MUL   : std_logic_vector(3 downto 0) := "0011";
 
 begin
 	--

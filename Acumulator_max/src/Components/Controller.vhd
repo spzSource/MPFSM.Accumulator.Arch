@@ -17,7 +17,7 @@ entity Controller is
 
 		rom_enabled             : out std_logic;
 		rom_address             : out std_logic_vector(5 downto 0);
-		rom_data_output         : in  std_logic_vector(8 downto 0);
+		rom_data_output         : in  std_logic_vector(9 downto 0);
 
 		ram_read_write          : out std_logic;
 		ram_address             : out std_logic_vector(5 downto 0);
@@ -25,7 +25,7 @@ entity Controller is
 		ram_data_output         : in  std_logic_vector(7 downto 0);
 
 		datapath_operand        : out std_logic_vector(7 downto 0);
-		datapath_operation_code : out std_logic_vector(2 downto 0);
+		datapath_operation_code : out std_logic_vector(3 downto 0);
 		datapath_enabled        : out std_logic;
 		datapath_result         : in  std_logic_vector(7 downto 0);
 		datapath_zero_flag      : in  std_logic;
@@ -43,6 +43,7 @@ architecture Controller_Behavioural of Controller is
 		LOAD_INDIRECT,
 		LOAD,
 		STORE,
+		STORE_INDIRECT,
 		ADD,
 		SUB,
 		HALT,
@@ -53,20 +54,21 @@ architecture Controller_Behavioural of Controller is
 	signal next_state    : states;
 	signal current_state : states;
 
-	signal instruction         : std_logic_vector(8 downto 0);
+	signal instruction         : std_logic_vector(9 downto 0);
 	signal instruction_counter : std_logic_vector(5 downto 0);
-	signal operation           : std_logic_vector(2 downto 0);
+	signal operation           : std_logic_vector(3 downto 0);
 	signal data_address        : std_logic_vector(5 downto 0);
 	signal data                : std_logic_vector(7 downto 0);
 
-	constant LOAD_OP  : std_logic_vector(2 downto 0) := "000";
-	constant STORE_OP : std_logic_vector(2 downto 0) := "001";
-	constant ADD_OP   : std_logic_vector(2 downto 0) := "010";
-	constant SUB_OP   : std_logic_vector(2 downto 0) := "011";
-	constant HALT_OP  : std_logic_vector(2 downto 0) := "100";
-	constant JNZ_OP   : std_logic_vector(2 downto 0) := "101";
-	constant JNSB_OP  : std_logic_vector(2 downto 0) := "110";
-	constant LOADI_OP : std_logic_vector(2 downto 0) := "111";
+	constant LOAD_OP   : std_logic_vector(3 downto 0) := "0000";
+	constant STORE_OP  : std_logic_vector(3 downto 0) := "0001";
+	constant ADD_OP    : std_logic_vector(3 downto 0) := "0010";
+	constant SUB_OP    : std_logic_vector(3 downto 0) := "0011";
+	constant HALT_OP   : std_logic_vector(3 downto 0) := "0100";
+	constant JNZ_OP    : std_logic_vector(3 downto 0) := "0101";
+	constant JNSB_OP   : std_logic_vector(3 downto 0) := "0110";
+	constant LOADI_OP  : std_logic_vector(3 downto 0) := "0111";	 
+	constant STOREI_OP : std_logic_vector(3 downto 0) := "1000";
 	
 	--
 	-- OP_CODE | Source                                 | Destination
@@ -80,8 +82,8 @@ architecture Controller_Behavioural of Controller is
 	--
 
 	constant DEFAULT_COUNTER_VALUE     : std_logic_vector(5 downto 0) := (instruction_counter'range => '0');
-	constant DEFAULT_INSTRUCTION_VALUE : std_logic_vector(8 downto 0) := (instruction'range => '0');
-	constant DEFAULT_OPERATION_VALUE   : std_logic_vector(2 downto 0) := (operation'range => '0');
+	constant DEFAULT_INSTRUCTION_VALUE : std_logic_vector(9 downto 0) := (instruction'range => '0');
+	constant DEFAULT_OPERATION_VALUE   : std_logic_vector(3 downto 0) := (operation'range => '0');
 	constant DEFAULT_ADDRESS_VALUE     : std_logic_vector(5 downto 0) := (data_address'range => '0');
 
 begin
@@ -125,12 +127,16 @@ begin
 				elsif (operation = SUB_OP) then
 					next_state <= SUB;
 				elsif (operation = LOADI_OP) then
-					next_state <= LOAD_INDIRECT;
+					next_state <= LOAD_INDIRECT;   
+				elsif (operation = STOREI_OP) then
+					next_state <= STORE_INDIRECT;
 				else
 					next_state <= IDLE;
 				end if;
 			when LOAD_INDIRECT =>
-				next_state <= READ_INDIRECT;
+				next_state <= READ_INDIRECT;  
+			when STORE_INDIRECT =>
+				next_state <= STORE;
 			when READ_INDIRECT =>
 				next_state <= LOAD;
 			when LOAD|STORE|ADD|SUB|JUMP_IF_NOT_ZERO|JUMP_IF_NOT_SIGN_BIT_SET =>
@@ -205,9 +211,9 @@ begin
 			operation    <= DEFAULT_OPERATION_VALUE;
 			data_address <= DEFAULT_ADDRESS_VALUE;
 		elsif (next_state = DECODE) then
-			operation    <= instruction(8 downto 6);
+			operation    <= instruction(9 downto 6);
 			data_address <= instruction(5 downto 0);	
-		elsif (next_state = LOAD_INDIRECT) then
+		elsif (next_state = LOAD_INDIRECT or next_state = STORE_INDIRECT) then
 			data_address <= data(5 downto 0);
 		end if;
 	end process;

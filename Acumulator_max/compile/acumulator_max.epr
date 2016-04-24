@@ -1,2 +1,7 @@
+"f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\MicroProcessor.vhd" VHDL acumulator_max 1 0 0 -02
+"f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\MicroROM.vhd" VHDL acumulator_max 1 0 0 -02
 "f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\Controller.vhd" VHDL acumulator_max 1 0 0 -02
+"f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\DataRAM.vhd" VHDL acumulator_max 1 0 0 -02
+"f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components\AccumulatorDataPath.vhd" VHDL acumulator_max 1 0 0 -02
+"f:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\TestBench\microprocessor_TB.vhd" VHDL acumulator_max 1 0 0 -02
 . . 0 0 0

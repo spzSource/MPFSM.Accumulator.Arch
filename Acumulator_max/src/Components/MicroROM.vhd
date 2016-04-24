@@ -9,7 +9,7 @@ entity MicroROM is
 	port(
 		read_enable : in  std_logic;
 		address     : in  std_logic_vector(5 downto 0);
-		data_output : out std_logic_vector(8 downto 0)
+		data_output : out std_logic_vector(9 downto 0)
 	);
 end MicroROM;
 
@@ -17,18 +17,18 @@ architecture MicroROM_Behaviour of MicroROM is
 	--
 	-- type and sub-types declarations
 	--
-	subtype instruction_subType is std_logic_vector(8 downto 0);
+	subtype instruction_subType is std_logic_vector(9 downto 0);
 	type ROM_type is array (0 to 63) of instruction_subType;
 
 	--
 	-- Represents the set of instructions as read only (constant) memory.
 	--
 	constant ROM : ROM_type := (
-	"111" & "000001", -- 000000 | 00 	|LOADI a[a[0]]
-	"001" & "000101", -- 				|STORE a[4]
-	"100" & "000000", -- 010110 | 22 	|HALT
+	"0111" & "000001", -- 000000 | 00 	|LOADI a[a[0]]
+	"1000" & "000110", -- 				|STOREI a[a[6]] = accumulator	
+	"0100" & "000000", -- 010110 | 22 	|HALT
 	
-	others => "100" & "000000"
+	others => "0100" & "000000"
 	);
 
 	signal data : instruction_subType;

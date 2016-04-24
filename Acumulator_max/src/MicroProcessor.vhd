@@ -19,7 +19,7 @@ architecture MicroProcessor_Behavioural of MicroProcessor is
 		port(
 			read_enable : in  std_logic;
 			address     : in  std_logic_vector(5 downto 0);
-			data_output : out std_logic_vector(8 downto 0)
+			data_output : out std_logic_vector(9 downto 0)
 		);
 	end component;
 
@@ -35,7 +35,7 @@ architecture MicroProcessor_Behavioural of MicroProcessor is
 	component AccumulatorDataPath is
 		port(
 			enabled              : in  std_logic;
-			operation_code       : in  std_logic_vector(2 downto 0);
+			operation_code       : in  std_logic_vector(3 downto 0);
 			operand              : in  std_logic_vector(7 downto 0);
 			result               : out std_logic_vector(7 downto 0);
 			zero_flag            : out std_logic;
@@ -52,7 +52,7 @@ architecture MicroProcessor_Behavioural of MicroProcessor is
 
 			rom_enabled             : out std_logic;
 			rom_address             : out std_logic_vector(5 downto 0);
-			rom_data_output         : in  std_logic_vector(8 downto 0);
+			rom_data_output         : in  std_logic_vector(9 downto 0);
 
 			ram_read_write          : out std_logic;
 			ram_address             : out std_logic_vector(5 downto 0);
@@ -60,7 +60,7 @@ architecture MicroProcessor_Behavioural of MicroProcessor is
 			ram_data_output         : in  std_logic_vector(7 downto 0);
 
 			datapath_operand        : out std_logic_vector(7 downto 0);
-			datapath_operation_code : out std_logic_vector(2 downto 0);
+			datapath_operation_code : out std_logic_vector(3 downto 0);
 			datapath_enabled        : out std_logic;
 			datapath_result         : in  std_logic_vector(7 downto 0);
 			datapath_zero_flag      : in  std_logic;
@@ -75,10 +75,10 @@ architecture MicroProcessor_Behavioural of MicroProcessor is
 
 	signal mp_rom_read_enable : std_logic;
 	signal mp_rom_address     : std_logic_vector(5 downto 0);
-	signal mp_rom_data_output : std_logic_vector(8 downto 0);
+	signal mp_rom_data_output : std_logic_vector(9 downto 0);
 
 	signal mp_datapath_enabled              : std_logic;
-	signal mp_datapath_operation_code       : std_logic_vector(2 downto 0);
+	signal mp_datapath_operation_code       : std_logic_vector(3 downto 0);
 	signal mp_datapath_operand              : std_logic_vector(7 downto 0);
 	signal mp_datapath_result               : std_logic_vector(7 downto 0);
 	signal mp_datapath_zero_flag            : std_logic;
