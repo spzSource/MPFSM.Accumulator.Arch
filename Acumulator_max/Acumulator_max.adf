@@ -74,3 +74,4 @@ TestBench/microprocessor_TB_runtest.do=-1
 .\src\Components\AccumulatorDataPath.vhd=VHDL Source Code
 .\src\TestBench\microprocessor_TB.vhd=VHDL Source Code
 .\src\TestBench\microprocessor_TB_runtest.do=Macro
+
