@@ -1,84 +1,92 @@
-timestamp=1461538781965
+timestamp=1461711173874
 
 [accumulatordatapath]
-A/accumulatordatapath_behavioural=A/AccumulatorDataPath_Behavioural 21|./src/Components/AccumulatorDataPath.vhd|19|1*1119120
-BinI32/accumulatordatapath_behavioural=3*246795
-I=0*119628
-I/accumulatordatapath_behavioural=I/AccumulatorDataPath_Behavioural 0*121618
-M=11|0|v98|1461537590439|./src/Components/AccumulatorDataPath.vhd|0*118998*0x06506fa7cabcd9656f954fdfb033892cd0b8106b|0*119518*0xab32bc1a2daf049573e14469f634e0e6
-M/accumulatordatapath_behavioural=M/AccumulatorDataPath_Behavioural 21|0|v98|1461538781895|./src/Components/AccumulatorDataPath.vhd|0*119936*0x6dab6e13b5f031a4a2c53c8d25bb70d5e5647564|0*121473*0xb33770ff1c10522f9491560174ac8e6c
+A/accumulatordatapath_behavioural=A/AccumulatorDataPath_Behavioural 21|./src/Components/AccumulatorDataPath.vhd|19|1*448098
+BinI32/accumulatordatapath_behavioural=3*88241
+I=0*13219
+I/accumulatordatapath_behavioural=I/AccumulatorDataPath_Behavioural 0*15209
+M=11|0|v98|1461704314547|./src/Components/AccumulatorDataPath.vhd|0*12589*0x06506fa7cabcd9656f954fdfb033892cd0b8106b|0*13109*0xab32bc1a2daf049573e14469f634e0e6
+M/accumulatordatapath_behavioural=M/AccumulatorDataPath_Behavioural 21|0|v98|1461711173818|./src/Components/AccumulatorDataPath.vhd|0*13527*0x6dab6e13b5f031a4a2c53c8d25bb70d5e5647564|0*15064*0xb33770ff1c10522f9491560174ac8e6c
 R=./src/Components/AccumulatorDataPath.vhd|8
 Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 Version/accumulatordatapath_behavioural=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 
+[commands]
+E=1*389322
+I=0*39951
+M=3|0|v98|1461711126167|./src/Components/Commands.vhd|0*39281*0xb0d3b948f5f3ab6b126823e2a6488c0d631bb066|0*39863*0xab32bc1a2daf049573e14469f634e0e6
+R=./src/Components/Commands.vhd|8
+Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
+
 [controller]
-A/controller_behavioural=A/Controller_Behavioural 21|./src/Components/Controller.vhd|36|1*1106414
-BinI32/controller_behavioural=3*243097
-I=0*118360
-I/controller_behavioural=I/Controller_Behavioural 0*140919
-M=11|0|v98|1461537590341|./src/Components/Controller.vhd|0*117363*0x7e94786ead2b3ad0627f0e59ac035c4a5ad5f788|0*118268*0xab32bc1a2daf049573e14469f634e0e6
-M/controller_behavioural=M/Controller_Behavioural 21|0|v98|1461538781815|./src/Components/Controller.vhd|0*136189*0xe1c378d8023ede9010ea09fbc095353878a458f7|0*140801*0xb33770ff1c10522f9491560174ac8e6c
-R=./src/Components/Controller.vhd|11
+A/controller_behavioural=A/Controller_Behavioural 21|./src/Components/Controller.vhd|38|1*436494
+BinI32/controller_behavioural=3*84616
+I=0*31147
+I/controller_behavioural=I/Controller_Behavioural 0*46406
+M=11|0|v98|1461711163130|./src/Components/Controller.vhd|0*30134*0x6d50f686c8cc358536fa95c2a27e267506ffc365|0*31055*0xab32bc1a2daf049573e14469f634e0e6
+M/controller_behavioural=M/Controller_Behavioural 21|0|v98|1461711173740|./src/Components/Controller.vhd|0*42132*0x2339677fb2c93eb3f794097ee6a64e305028222a|0*46288*0xb33770ff1c10522f9491560174ac8e6c
+R=./src/Components/Controller.vhd|13
 Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 Version/controller_behavioural=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 
 [dataram]
-A/dataram_bevioural=A/DataRAM_Bevioural 21|./src/Components/DataRAM.vhd|22|1*1116076
-BinI32/dataram_bevioural=3*245881
-I=0*10513
-I/dataram_bevioural=I/DataRAM_Bevioural 0*134854
-M=11|0|v98|1461502266728|./src/Components/DataRAM.vhd|0*10016*0x5f1532a54e458647cca6f6f11a82b1f2cfca1c0c|0*10427*0xab32bc1a2daf049573e14469f634e0e6
-M/dataram_bevioural=M/DataRAM_Bevioural 21|0|v98|1461538781861|./src/Components/DataRAM.vhd|0*133963*0x126f139b6d19fbac029726d6993688bc974ae8ab|0*134747*0xb33770ff1c10522f9491560174ac8e6c
+A/dataram_bevioural=A/DataRAM_Bevioural 21|./src/Components/DataRAM.vhd|22|1*444822
+BinI32/dataram_bevioural=3*87327
+I=0*10749
+I/dataram_bevioural=I/DataRAM_Bevioural 0*38502
+M=11|0|v98|1461704314501|./src/Components/DataRAM.vhd|0*10252*0x5f1532a54e458647cca6f6f11a82b1f2cfca1c0c|0*10663*0xab32bc1a2daf049573e14469f634e0e6
+M/dataram_bevioural=M/DataRAM_Bevioural 21|0|v98|1461711173787|./src/Components/DataRAM.vhd|0*37551*0x5b1a9b6d1f7153b5b7848e8f04c8df4f8647dc6a|0*38395*0xb33770ff1c10522f9491560174ac8e6c
 R=./src/Components/DataRAM.vhd|13
 Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 Version/dataram_bevioural=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 
 [microprocessor]
-A/microprocessor_behavioural=A/MicroProcessor_Behavioural 21|./src/MicroProcessor.vhd|17|1*1095189
+A/microprocessor_behavioural=A/MicroProcessor_Behavioural 21|./src/MicroProcessor.vhd|17|1*423811
 I=0*655
-I/microprocessor_behavioural=I/MicroProcessor_Behavioural 0*125348
-M=11|0|v98|1461502266625|./src/MicroProcessor.vhd|0*204*0xdefb11b51cf97e485939914753293076b073559b|0*566*0xab32bc1a2daf049573e14469f634e0e6
-M/microprocessor_behavioural=M/MicroProcessor_Behavioural 21|0|v98|1461538781762|./src/MicroProcessor.vhd|0*121958*0x141ea730c0e7a9530bd0f116e494ddcfc1e7afa8|0*125229*0xb33770ff1c10522f9491560174ac8e6c
+I/microprocessor_behavioural=I/MicroProcessor_Behavioural 0*20960
+M=11|0|v98|1461704314376|./src/MicroProcessor.vhd|0*204*0xdefb11b51cf97e485939914753293076b073559b|0*566*0xab32bc1a2daf049573e14469f634e0e6
+M/microprocessor_behavioural=M/MicroProcessor_Behavioural 21|0|v98|1461711173689|./src/MicroProcessor.vhd|0*17570*0x141ea730c0e7a9530bd0f116e494ddcfc1e7afa8|0*20841*0xb33770ff1c10522f9491560174ac8e6c
 R=./src/MicroProcessor.vhd|8
 Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 Version/microprocessor_behavioural=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 
 [microprocessor_tb]
-A/tb_architecture=A/TB_ARCHITECTURE 21|./src/TestBench/microprocessor_TB.vhd|10|1*1123640
-BinI32/tb_architecture=3*248216
-I=0*15646
-I/tb_architecture=I/TB_ARCHITECTURE 0*16792
-M=11|0|v98|1461502266861|./src/TestBench/microprocessor_TB.vhd|0*15251*0x35245cc67f13aa7f766b1f18d35849032bc7c6c5|0*15541*0xab32bc1a2daf049573e14469f634e0e6
-M/tb_architecture=M/TB_ARCHITECTURE 21|0|v98|1461538781935|./src/TestBench/microprocessor_TB.vhd|0*15952*0x4be49f509e64f748f5aba1f4bfe43a285b3aebcb|0*16668*0xb33770ff1c10522f9491560174ac8e6c
+A/tb_architecture=A/TB_ARCHITECTURE 21|./src/TestBench/microprocessor_TB.vhd|10|1*452618
+BinI32/tb_architecture=3*89662
+I=0*16041
+I/tb_architecture=I/TB_ARCHITECTURE 0*17187
+M=11|0|v98|1461704314594|./src/TestBench/microprocessor_TB.vhd|0*15646*0x35245cc67f13aa7f766b1f18d35849032bc7c6c5|0*15936*0xab32bc1a2daf049573e14469f634e0e6
+M/tb_architecture=M/TB_ARCHITECTURE 21|0|v98|1461711173851|./src/TestBench/microprocessor_TB.vhd|0*16347*0x4be49f509e64f748f5aba1f4bfe43a285b3aebcb|0*17063*0xb33770ff1c10522f9491560174ac8e6c
 R=./src/TestBench/microprocessor_TB.vhd|7
 Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 Version/tb_architecture=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 
 [microrom]
-A/microrom_behaviour=A/MicroROM_Behaviour 21|./src/Components/MicroROM.vhd|16|1*1104314
-BinI32/microrom_behaviour=3*242178
-I=0*115331
-I/microrom_behaviour=I/MicroROM_Behaviour 0*141946
-M=11|0|v98|1461537590260|./src/Components/MicroROM.vhd|0*114870*0xd5c3443016062b031a2b5cdd3e2aeda71e6e55ec|0*115243*0xab32bc1a2daf049573e14469f634e0e6
-M/microrom_behaviour=M/MicroROM_Behaviour 21|0|v98|1461538781773|./src/Components/MicroROM.vhd|0*141241*0x560a140a9810e318dd21c1e3876312822f9bd83a|0*141836*0xb33770ff1c10522f9491560174ac8e6c
-R=./src/Components/MicroROM.vhd|8
+A/microrom_behaviour=A/MicroROM_Behaviour 21|./src/Components/MicroROM.vhd|17|1*432936
+BinI32/microrom_behaviour=3*83194
+I=0*29064
+I/microrom_behaviour=I/MicroROM_Behaviour 0*41761
+M=11|0|v98|1461711163082|./src/Components/MicroROM.vhd|0*28587*0xe02c291781e4ea3cd9fe79ddd71c504e61a79523|0*28976*0xab32bc1a2daf049573e14469f634e0e6
+M/microrom_behaviour=M/MicroROM_Behaviour 21|0|v98|1461711173699|./src/Components/MicroROM.vhd|0*40248*0xa12abbc08dce429c34e95330815a43f5bf69d80d|0*41651*0xb33770ff1c10522f9491560174ac8e6c
+R=./src/Components/MicroROM.vhd|9
 Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 Version/microrom_behaviour=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 
 [~A]
-ModifyID=3499
+ModifyID=479
 Version=73
 
 [~MFT]
-0=275|0Acumulator_max.mgf|141946|120740
-1=457|1Acumulator_max.mgf|1123640|1095189
-3=380|3Acumulator_max.mgf|248216|242178
+0=132|0Acumulator_max.mgf|46406|23165
+1=166|1Acumulator_max.mgf|452618|422507
+3=130|3Acumulator_max.mgf|89662|83194
 
 [~U]
-accumulatordatapath=AccumulatorDataPath 11|0*118659|
-controller=Controller 11|0*116645|
-dataram=DataRAM 11|0*9774|
+accumulatordatapath=AccumulatorDataPath 11|0*12250|
+commands=3|0*38816|0*38951
+controller=Controller 11|0*29416|
+dataram=DataRAM 11|0*10010|
 microprocessor=MicroProcessor 11|0*0|
-microprocessor_tb=11|0*15154|
-microrom=MicroROM 11|0*114663|
+microprocessor_tb=11|0*15549|
+microrom=MicroROM 11|0*28380|
 

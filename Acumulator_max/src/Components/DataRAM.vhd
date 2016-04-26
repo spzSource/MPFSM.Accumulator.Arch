@@ -21,27 +21,36 @@ end entity DataRAM;
 
 architecture DataRAM_Bevioural of DataRAM is
 	subtype byte is std_logic_vector(7 downto 0);
-	type RAM_t is array (0 to 63) of byte;
+	type RAM_t is array (0 to 16) of byte;
 
 	--
 	-- Initial state for memory
 	--
-	signal RAM : RAM_t := (	
-	"00000000",	-- 0	a[0]
-	"00000011",	-- 2	a[1]
-	"00000000", -- 0	a[2]
-	"00000110", -- 6	a[3]
-	"00000000", -- 0	a[4] 
-	"00000000", -- 0    a[5] 
-	"00001000", -- 0	a[6]
-	"00000000", -- 0	a[7]
-	"00000000", -- 0	a[8]
-	others => "00000000"
+	signal RAM : RAM_t := (
+		"00000101",                     -- 5	a[0]  
+		"00000011",                     -- 2	a[1]
+		"00000001",                     -- 1	a[2]
+		"00000110",                     -- 6	a[3]
+
+		"00000000",                     -- 0	a[4]  [-]
+		"00000011",                     -- 3    a[5]  outer loop: max index value
+		"00000100",                     -- 4	a[6]  inner loop: max index value
+
+		"00000000",                     -- 0	a[7]  outer loop: current index
+		"00000000",                     -- 0	a[8]  inner loop: current index    
+
+		"00000001",                     -- 1	a[9]  constant one = 1	  
+		"00000000",                     -- 0    a[10] constant zero = 0
+
+		"00000000",                     -- 0    a[11] reserved cell (temp 1)
+		"00000000",                     -- 0   	a[12] reserved cell (temp 2) 
+
+		others => "00000000"
 	);
 
 	signal data_in  : byte;
 	signal data_out : byte;
-begin 
+begin
 	--
 	-- describes write-behaviour for RAM
 	--

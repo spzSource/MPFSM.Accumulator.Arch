@@ -32,6 +32,7 @@ ON_SERVERFARM_IMPL=0
 ON_SERVERFARM_SIM=0
 DVM_DISPLAY=NO
 FAMILY=<none>
+fileopenfolder=F:\Dropbox\Magistracy\POCP\practice\MPFSM_acumulator_max\Acumulator_max\src\Components
 
 [LocalVerilogSets]
 EnableSLP=1
@@ -49,7 +50,7 @@ UCF=
 
 [HierarchyViewer]
 SortInfo=u
-HierarchyInformation=microprocessor_tb|TB_ARCHITECTURE|0 
+HierarchyInformation=microprocessor_tb|TB_ARCHITECTURE|0
 ShowHide=ShowTopLevel
 Selected=
 
@@ -65,6 +66,7 @@ Components/DataRAM.vhd=-1
 Components/AccumulatorDataPath.vhd=-1
 TestBench/microprocessor_TB.vhd=-1
 TestBench/microprocessor_TB_runtest.do=-1
+Components/Commands.vhd=-1
 
 [Files.Data]
 .\src\MicroProcessor.vhd=VHDL Source Code
@@ -74,4 +76,5 @@ TestBench/microprocessor_TB_runtest.do=-1
 .\src\Components\AccumulatorDataPath.vhd=VHDL Source Code
 .\src\TestBench\microprocessor_TB.vhd=VHDL Source Code
 .\src\TestBench\microprocessor_TB_runtest.do=Macro
+.\src\Components\Commands.vhd=VHDL Source Code
 

@@ -3,7 +3,9 @@ library ieee;
 use ieee.numeric_std.all;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_arith.all;
-use ieee.std_logic_unsigned.all;
+use ieee.std_logic_unsigned.all; 
+
+use commands.all;
 
 --
 -- Holds interaction among ROM, RAM and datapath.
@@ -47,7 +49,7 @@ architecture Controller_Behavioural of Controller is
 		ADD,
 		SUB,
 		HALT,
-		JUMP_IF_NOT_ZERO,
+		JUMP_IF_ZERO,
 		JUMP_IF_NOT_SIGN_BIT_SET
 	);
 
@@ -59,16 +61,6 @@ architecture Controller_Behavioural of Controller is
 	signal operation           : std_logic_vector(3 downto 0);
 	signal data_address        : std_logic_vector(5 downto 0);
 	signal data                : std_logic_vector(7 downto 0);
-
-	constant LOAD_OP   : std_logic_vector(3 downto 0) := "0000";
-	constant STORE_OP  : std_logic_vector(3 downto 0) := "0001";
-	constant ADD_OP    : std_logic_vector(3 downto 0) := "0010";
-	constant SUB_OP    : std_logic_vector(3 downto 0) := "0011";
-	constant HALT_OP   : std_logic_vector(3 downto 0) := "0100";
-	constant JNZ_OP    : std_logic_vector(3 downto 0) := "0101";
-	constant JNSB_OP   : std_logic_vector(3 downto 0) := "0110";
-	constant LOADI_OP  : std_logic_vector(3 downto 0) := "0111";	 
-	constant STOREI_OP : std_logic_vector(3 downto 0) := "1000";
 	
 	--
 	-- OP_CODE | Source                                 | Destination
@@ -112,8 +104,8 @@ begin
 					next_state <= HALT;
 				elsif (operation = STORE_OP) then
 					next_state <= STORE;
-				elsif (operation = JNZ_OP) then
-					next_state <= JUMP_IF_NOT_ZERO;
+				elsif (operation = JZ_OP) then
+					next_state <= JUMP_IF_ZERO;
 				elsif (operation = JNSB_OP) then
 					next_state <= JUMP_IF_NOT_SIGN_BIT_SET;
 				else
@@ -139,7 +131,7 @@ begin
 				next_state <= STORE;
 			when READ_INDIRECT =>
 				next_state <= LOAD;
-			when LOAD|STORE|ADD|SUB|JUMP_IF_NOT_ZERO|JUMP_IF_NOT_SIGN_BIT_SET =>
+			when LOAD|STORE|ADD|SUB|JUMP_IF_ZERO|JUMP_IF_NOT_SIGN_BIT_SET =>
 				next_state <= FETCH;
 			when HALT =>
 				next_state <= HALT;
@@ -170,7 +162,7 @@ begin
 		elsif falling_edge(clk) then
 			if (current_state = DECODE) then
 				instruction_counter <= instruction_counter + 1;
-			elsif (current_state = JUMP_IF_NOT_ZERO and datapath_zero_flag = '0') then
+			elsif (current_state = JUMP_IF_ZERO and datapath_zero_flag = '0') then
 				instruction_counter <= data_address;
 			elsif (current_state = JUMP_IF_NOT_SIGN_BIT_SET and datapath_sign_bit_flag = '0') then
 				instruction_counter <= data_address;
@@ -220,7 +212,7 @@ begin
 
 	RAM_ADDR_SET : process(data_address, data)
 	begin
-		if (current_state /= JUMP_IF_NOT_SIGN_BIT_SET and current_state /= JUMP_IF_NOT_ZERO) then
+		if (current_state /= JUMP_IF_NOT_SIGN_BIT_SET and current_state /= JUMP_IF_ZERO) then
 			ram_address <= data_address;
 		end if;
 	end process;
