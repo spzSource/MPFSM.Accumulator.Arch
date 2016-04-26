@@ -1,1 +1,0 @@
- -w -cvi -2002  -s "f:/Dropbox/Magistracy/POCP/practice/MPFSM_acumulator_max/Acumulator_max/hdl_assist/library.cfg"  -work Acumulator_max  -e 100  "F:/Dropbox/Magistracy/POCP/practice/Lab07/Lab07/src/CTRL1.vhd"
