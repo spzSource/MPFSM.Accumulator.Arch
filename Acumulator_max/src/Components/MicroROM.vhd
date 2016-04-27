@@ -50,7 +50,7 @@ architecture MicroROM_Behaviour of MicroROM is
 		-- check exit condition for outer loop
 		LOAD_OP   & OUTER_MAX_ADDR,					-- |  000011  |	  3
 		SUB_OP    & OUTER_INDEX_ADDR,				-- |  000100  |	  4
-		JZ_OP     & "100100", -- { end outer loop }	-- |  000101  |	  5
+		JZ_OP     & "100000", -- { end outer loop }	-- |  000101  |	  5
 		
 		-- check exit condition for inner loop
 		LOAD_OP   & OUTER_INDEX_ADDR,				-- |  000110  |	  6
@@ -58,7 +58,7 @@ architecture MicroROM_Behaviour of MicroROM is
 		STORE_OP  & INNER_INDEX_ADDR,				-- |  001000  |	  8
 		LOAD_OP   & INNER_MAX_ADDR,					-- |  001001  |	  9
 		SUB_OP    & INNER_INDEX_ADDR,				-- |  001010  |	  10
-		JZ_OP     & "011111", -- {end inner loop}	-- |  001011  |	  11
+		JZ_OP     & "011011", -- {end inner loop}	-- |  001011  |	  11
 		
 		-- compare two values, retrieved by current indexes
 		LOADI_OP  & OUTER_INDEX_ADDR,				-- |  001100  |	  12
@@ -69,27 +69,22 @@ architecture MicroROM_Behaviour of MicroROM is
 		JNSB_OP   & "010110", -- {skip swap}		-- |  010001  |	  17	
 		
 		-- swap two items
-		LOAD_OP   & TEMP_1, 						-- |  010010  |	  18
-		STORE_OP  & TEMP_2,				   			-- |  010011  |	  19
-		LOADI_OP  & INNER_INDEX_ADDR,	 			-- |  010100  |	  20
-		STORE_OP  & TEMP_1,							-- |  010101  |	  21
+		LOAD_OP   & TEMP_1,							-- |  010010  |	  18
+		STOREI_OP & INNER_INDEX_ADDR,				-- |  010011  |	  19
+		LOAD_OP   & TEMP_2,							-- |  010100  |	  20
+		STOREI_OP & OUTER_INDEX_ADDR,				-- |  010101  |	  21
 		
-		LOAD_OP   & TEMP_1,							-- |  010110  |	  22
-		STOREI_OP & OUTER_INDEX_ADDR,				-- |  010111  |	  23
-		LOAD_OP   & TEMP_2,							-- |  011000  |	  24
-		STOREI_OP & INNER_INDEX_ADDR, 				-- |  011001  |	  25
+		LOAD_OP   & INNER_INDEX_ADDR,				-- |  010110  |	  22
+		ADD_OP    & ONE_ADDR,						-- |  010111  |	  23
+		STORE_OP  & INNER_INDEX_ADDR,				-- |  011000  |	  24
+		LOAD_OP   & ZERO_ADDR,						-- |  011001  |	  25
+		JZ_OP     & "001001",						-- |  011010  |	  26
 		
-		LOAD_OP   & INNER_INDEX_ADDR,				-- |  011010  |	  26
-		ADD_OP    & ONE_ADDR,						-- |  011011  |	  27
-		STORE_OP  & INNER_INDEX_ADDR,				-- |  011100  |	  28
-		LOAD_OP   & ZERO_ADDR,						-- |  011101  |	  29
-		JZ_OP     & "001001",						-- |  011110  |	  30
-		
-		LOAD_OP   & OUTER_INDEX_ADDR,				-- |  011111  |	  31
-		ADD_OP    & ONE_ADDR,						-- |  100000  |	  32
-		STORE_OP  & OUTER_INDEX_ADDR,				-- |  100001  |	  33
-		LOAD_OP   & ZERO_ADDR,						-- |  100010  |	  34
-		JZ_OP     & "000011",						-- |  100011  |	  35
+		LOAD_OP   & OUTER_INDEX_ADDR,				-- |  011011  |	  27
+		ADD_OP    & ONE_ADDR,						-- |  011100  |	  28
+		STORE_OP  & OUTER_INDEX_ADDR,				-- |  011101  |	  29
+		LOAD_OP   & ZERO_ADDR,						-- |  011110  |	  30
+		JZ_OP     & "000011",						-- |  011111  |	  31
 		
 		others => HALT_OP & "000000"
 	);
