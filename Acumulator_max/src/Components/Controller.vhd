@@ -162,7 +162,7 @@ begin
 		elsif falling_edge(clk) then
 			if (current_state = DECODE) then
 				instruction_counter <= instruction_counter + 1;
-			elsif (current_state = JUMP_IF_ZERO and datapath_zero_flag = '0') then
+			elsif (current_state = JUMP_IF_ZERO and datapath_zero_flag = '1') then
 				instruction_counter <= data_address;
 			elsif (current_state = JUMP_IF_NOT_SIGN_BIT_SET and datapath_sign_bit_flag = '0') then
 				instruction_counter <= data_address;

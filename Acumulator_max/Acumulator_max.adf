@@ -60,21 +60,21 @@ TestBench=1
 
 [Files]
 /MicroProcessor.vhd=-1
-Components/MicroROM.vhd=-1
-Components/Controller.vhd=-1
 Components/DataRAM.vhd=-1
+Components/Commands.vhd=-1
 Components/AccumulatorDataPath.vhd=-1
+Components/Controller.vhd=-1
+Components/MicroROM.vhd=-1
 TestBench/microprocessor_TB.vhd=-1
 TestBench/microprocessor_TB_runtest.do=-1
-Components/Commands.vhd=-1
 
 [Files.Data]
 .\src\MicroProcessor.vhd=VHDL Source Code
-.\src\Components\MicroROM.vhd=VHDL Source Code
-.\src\Components\Controller.vhd=VHDL Source Code
 .\src\Components\DataRAM.vhd=VHDL Source Code
+.\src\Components\Commands.vhd=VHDL Source Code
 .\src\Components\AccumulatorDataPath.vhd=VHDL Source Code
+.\src\Components\Controller.vhd=VHDL Source Code
+.\src\Components\MicroROM.vhd=VHDL Source Code
 .\src\TestBench\microprocessor_TB.vhd=VHDL Source Code
 .\src\TestBench\microprocessor_TB_runtest.do=Macro
-.\src\Components\Commands.vhd=VHDL Source Code
 

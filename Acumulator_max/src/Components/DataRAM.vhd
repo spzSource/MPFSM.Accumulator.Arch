@@ -21,14 +21,14 @@ end entity DataRAM;
 
 architecture DataRAM_Bevioural of DataRAM is
 	subtype byte is std_logic_vector(7 downto 0);
-	type RAM_t is array (0 to 16) of byte;
+	type RAM_t is array (0 to 64) of byte;
 
 	--
 	-- Initial state for memory
 	--
 	signal RAM : RAM_t := (
 		"00000101",                     -- 5	a[0]  
-		"00000011",                     -- 2	a[1]
+		"00000011",                     -- 3	a[1]
 		"00000001",                     -- 1	a[2]
 		"00000110",                     -- 6	a[3]
 
